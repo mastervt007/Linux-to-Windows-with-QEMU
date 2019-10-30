@@ -8,7 +8,7 @@ virtu=$(egrep -i '^flags.*(vmx|svm)' /proc/cpuinfo | wc -l)
 if [ $virtu = 0 ] ; then echo -e "[Error] ${RED}Virtualization/KVM in your Server/VPS is OFF\nExiting...${NC}";
 else
 #
-# Deleting Previous Windows Installation by the Script
+#Deleting Previous Windows Installation by the Script
 #umount -l /mnt /media/script /media/sw
 #rm -rf /mediabots /floppy /virtio /media/* /tmp/*
 #rm -f /sw.iso /disk.img 
